@@ -27,14 +27,14 @@ fn get_filename() str = {
 };
 
 fn get_input() []u8 = {
-  // Ask user for input
-  fmt::printfln("Enter some words or data to write to a file:")!;
+	// Ask user for input
+	fmt::printfln("Enter some words or data to write to a file:")!;
 
-  // Read the buffer
-  const input = bufio::scanline(os::stdin)! as []u8;
+	// Read the buffer
+	const input = bufio::scanline(os::stdin)! as []u8;
 
-  // Return the data
-  return input;
+	// Return the data
+	return input;
 };
 
 fn save_input(file_name: str, file_data: []u8) str = {
